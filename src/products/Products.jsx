@@ -24,7 +24,7 @@ const Products = () => {
   };
   return (
     <div className="md:flex">
-      <div className="w-full px-24 md:w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:px-2 gap-4 mb-8">
+      <div className="w-full px-6 md:w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:px-2 gap-4 mb-8">
         {products.slice(0, seeAll ? 75 : 9).map((product) => (
           <SingleProducts
             key={product.id}
