@@ -23,7 +23,7 @@ const Products = () => {
     setCart(newCart);
   };
   return (
-    <div className="md:flex">
+    <div className="md:flex mt-24">
       <div className="w-full px-6 md:w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:px-2 gap-4 mb-8">
         {products.slice(0, seeAll ? 75 : 9).map((product) => (
           <SingleProducts
@@ -39,7 +39,7 @@ const Products = () => {
         )}
         <ToastContainer />
       </div>
-      <div className="w-full md:w-[20%] h-[300px] bg-slate-300 mb-5">
+      <div className="w-full md:w-[20%] h-[300px] bg-slate-300 mb-5 sticky top-0">
         <Cart cart={cart}></Cart>
       </div>
     </div>
